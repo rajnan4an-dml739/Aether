@@ -108,7 +108,7 @@ const Step4Roles = () => {
             onClick={() => update("step4", { twoFA: !s.twoFA })}
             className={`relative h-7 w-12 rounded-full transition-colors border ${s.twoFA ? "bg-linear-to-br from-[#a855f7] to-[#d946ef] border-transparent" : "bg-violet-200/70 dark:bg-purple-900/30 border-violet-300/60 dark:border-purple-800/50"}`}
           >
-            <span className={`absolute top-0.5 h-6 w-6 rounded-full bg-white shadow transition-transform ${s.twoFA ? "translate-x-5" : "translate-x-0.5"}`} />
+            <span className={`absolute top-0.5 h-6 w-6 rounded-full bg-white shadow transition-transform ${s.twoFA ? "translate-x" : "translate-x-0.5"}`} />
           </button>
         </div>
         {s.twoFA && (
